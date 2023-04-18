@@ -1,0 +1,243 @@
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.scroll {
+  position: fixed;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+  height: 5px;
+  transform-origin: 0%;
+  border-radius: 100px;
+  background: linear-gradient(
+    98.09deg,
+    #00aab8 5.69%,
+    #e76064 48.58%,
+    #d858c0 70.98%,
+    #9747ff 96.47%
+  );
+}
+
+.welcome {
+  @apply font-CDisplay uppercase font-medium text-[40px] text-navTextLight dark:text-navTextDark overflow-hidden  h-[6rem];
+}
+
+.welcome li {
+  @apply h-[8rem] flex items-center;
+  /* animation: slideup 4s linear 1s; */
+}
+
+@keyframes slideup {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-31rem);
+  }
+}
+
+.heading {
+  @apply font-semibold font-CDisplay capitalize  leading-none mb-8;
+}
+
+.section {
+  @apply px-[2.2rem] py-[1rem] lg:px-[10rem] lg:py-[5rem] text-center  font-Satoshi;
+}
+
+.container {
+  position: relative;
+  /* min-height: 10vh; */
+}
+
+.container h1 {
+  @apply uppercase tracking-[0.03em] leading-[0.8] bg-clip-text bg-gradient-to-b from-[#edebeb] to-[#a0a0b4] dark:from-[#10101a] dark:to-[#683fd6] pt-4 text-transparent transition-all duration-500 opacity-60;
+}
+
+.light {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 1s;
+  background: linear-gradient(
+      180deg,
+      rgba(16, 16, 26, 0.01) 0%,
+      rgba(164, 164, 164, 0.002) 450%
+    ),
+    radial-gradient(circle at 50% 50%, transparent 0%, rgba(16, 16, 26, 0.7) 0%);
+}
+.dark {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* transition: all 1s; */
+  background: linear-gradient(
+      180deg,
+      rgba(237, 235, 235, 0.01) 0%,
+      rgba(160, 160, 180, 0.002) 450%
+    ),
+    radial-gradient(
+      circle at 50% 50%,
+      transparent 5%,
+      rgba(160, 160, 180, 0.2) 18%
+    );
+}
+
+.herogradient {
+  background-size: 400%;
+  background: linear-gradient(
+      98.09deg,
+      #00aab8 5.69%,
+      #e76064 48.58%,
+      #d858c0 70.98%,
+      #9747ff 96.47%
+    )
+    0 0 / 200% 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: herogradient 5s linear infinite;
+  letter-spacing: 2px;
+}
+
+.btn {
+  transition: all 0.5s;
+  margin-top: 3.6rem;
+  @apply bg-[#4c41a5] text-[#fff] px-[1rem] py-[2rem] rounded-full relative overflow-hidden cursor-pointer min-h-[4rem] lg:min-h-[5.6rem] min-w-[14rem] lg:min-w-[18rem] mt-[3.6rem];
+}
+
+.btn a {
+  @apply text-[1.5rem] lg:text-[1.8rem] no-underline text-[#fff] capitalize grid place-items-center w-full h-full absolute top-0 left-0 font-bold;
+}
+
+.skew {
+  background-color: rgba(186, 182, 219, 0.95);
+  height: 100%;
+  width: 70%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  opacity: 0.2;
+  transform: skewX(-40deg);
+  transition: all 01s;
+  animation: skewleft 2s infinite;
+}
+
+/* .btn:hover {
+  background: #4c41a5;
+  box-shadow: 0px 0px 247.182px #605991, 0px 0px 141.247px #605991,
+    0px 0px 82.3939px #605991, 0px 0px 41.197px #605991,
+    0px 0px 11.7706px #605991, 0px 0px 5.88528px #605991;
+} */
+
+.btn:hover .skew {
+  left: 150%;
+}
+
+@keyframes skewleft {
+  0% {
+    left: -100%;
+  }
+
+  50% {
+    left: 110%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes herogradient {
+  to {
+    background-position: 200% 0;
+  }
+}
+
+.techs {
+  @apply flex justify-between p-[2rem] lg:p-[7rem];
+}
+.techs h3 {
+  @apply text-[3rem] lg:text-[8rem] text-bodyTextLight dark:text-navTextDark;
+}
+
+.card {
+  @apply lg:flex  justify-between px-[1rem] py-[3rem]  lg:px-[10rem] lg:py-[8rem] border-[3px] border-[#dfdfdf] dark:border-[#131320]  bg-gradient-to-b from-[#e9e9e9] to-[#dbdbdb] dark:from-[#131320]  dark:to-primaryDark mb-[10rem] rounded-[4rem] lg:rounded-[8rem];
+}
+
+.cardDetails {
+  @apply lg:text-left lg:max-w-[50%];
+}
+
+.cardDetails h3 {
+  @apply font-CDisplay font-semibold text-[2.8rem] lg:text-[4.5rem] bg-clip-text  text-transparent  capitalize my-4;
+}
+.cardDetails p {
+  @apply text-[1.6rem] lg:text-sm mb-4 font-medium text-navTextLight dark:text-navTextDark;
+}
+
+.stack {
+  @apply text-[1.4rem] lg:text-xsm font-bold uppercase;
+}
+
+.stack span {
+  @apply inline-block py-1 px-3 mr-4 bg-[#626161] dark:bg-[#7f7f7f6b] text-navTextDark  rounded-[4px];
+}
+
+.color1 {
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-[#b24592] to-[#f15f79];
+}
+.color2 {
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-[#C02425] to-[#F0CB35];
+}
+.color3 {
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-[#c2e59c] to-[#64b3f4];
+}
+.color4 {
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-[#8E0E00] to-[#1F1C18];
+}
+
+.outerbox {
+  background-size: 400%;
+  background: linear-gradient(
+      98.09deg,
+      #00aab8 5.69%,
+      #e76064 48.58%,
+      #d858c0 70.98%,
+      #9747ff 96.47%
+    )
+    0 0 / 200% 100%;
+  animation: swirl 5s linear infinite;
+}
+
+@keyframes swirl {
+  to {
+    background-position: 200% 0;
+  }
+}
