@@ -15,11 +15,11 @@ function Projects() {
       <Light text={"projects"} />
       <motion.h2
         variants={childrenVar1}
-        className=" herogradient  text-[2.4rem] lg:text-2xl  heading"
+        className=" herogradient  text-[2.4rem] sm:text-[3rem] lg:text-2xl  heading"
       >
         my work: where code meets creativity
       </motion.h2>
-      <div className="px-4 lg:px-[10rem] mt-[6rem]">
+      <div className="px-4 sm:px-[3rem] lg:px-[10rem] mt-[4rem] lg:mt-[6rem]">
         {projects.map((project) => {
           return <Card key={project.id} {...project} />;
         })}

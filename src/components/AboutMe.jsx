@@ -24,13 +24,13 @@ function AboutMe() {
       <Light text={"about me"} />
       <motion.h2
         variants={childrenVar1}
-        className=" herogradient text-[2.5rem] lg:text-2xl heading"
+        className=" herogradient text-[2.5rem] sm:text-[3rem] lg:text-2xl heading"
       >
         meet the developer: exploring my journey
       </motion.h2>
       <motion.p
         variants={childrenVar1}
-        className="text-xsm max-w-[95rem] mx-auto text-bodyTextLight dark:text-navTextDark font-medium"
+        className="text-xsm sm:text-[1.8rem] max-w-[95rem] mx-auto text-bodyTextLight dark:text-navTextDark font-medium"
       >
         I am a front-end developer with a passion for creating user-friendly web
         experiences through codes. With several years of experience in the
@@ -43,7 +43,7 @@ function AboutMe() {
         that exceeds your expectations.
       </motion.p>
 
-      <motion.div className="p-[1.5rem] lg:p-[5rem] overflow-hidden">
+      <motion.div className="p-[1.5rem] sm:p-[2.5rem] lg:p-[5rem] overflow-hidden">
         <motion.h2
           variants={childrenVar2}
           className="text-[1.6rem] lg:text-xl font-CDisplay uppercase font-semibold text-navTextLight dark:text-navTextDark tracking-[2px]"

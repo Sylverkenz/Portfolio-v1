@@ -33,9 +33,9 @@ function ContactMe() {
         <div className=" bg-primaryLight dark:bg-primaryDark py-[2rem] lg:px-[12rem] lg:py-[5rem] rounded-[13.75px] lg:rounded-[57px] ">
           <motion.p
             variants={childrenVar1}
-            className=" font-CDisplay text-[1.8rem] lg:text-2xl font-semibold mx-auto text-navTextLight dark:text-navTextDark  "
+            className=" font-CDisplay text-[1.8rem] sm:text-[2rem] lg:text-2xl font-semibold mx-auto text-navTextLight dark:text-navTextDark  "
           >
-            Let’s Work Together to Build a <br /> User-Friendly Web Experience
+            Let’s Work Together to Build a <br className="sm:hidden" /> User-Friendly Web Experience <br className=" hidden sm:block" />
             that Exceeds Your Expectation
           </motion.p>
           <motion.button variants={childrenVar1} className="btn">

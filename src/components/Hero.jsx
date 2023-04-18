@@ -49,7 +49,7 @@ function Hero() {
         <div className="overflow-hidden ">
           <motion.h1
             variants={fromLeft}
-            className="text-[3.2rem] lg:text-4xl heading text-black dark:text-white duration-500"
+            className="text-[3.2rem] sm:text-[4rem] lg:text-4xl heading text-black dark:text-white duration-500"
           >
             <span className="herogradient">coding</span> your vision into
             reality
@@ -57,10 +57,10 @@ function Hero() {
         </div>
         <motion.p
           variants={fromBottom}
-          className="text-navTextLight dark:text-navTextDark text-[1.5rem] lg:text-xl max-w-[90rem] font-medium mx-auto duration-500"
+          className="text-navTextLight dark:text-navTextDark text-[1.5rem] sm:text-[2rem] lg:text-xl max-w-[90rem] font-medium mx-auto duration-500"
         >
           Hello there, my name is Chika Sylvester and I am a{" "}
-          <span className="herogradient font-bold text-[1.5rem] lg:text-xxl">
+          <span className="herogradient font-bold text-[1.5rem] sm:text-[2rem] lg:text-xxl">
             Frontend Developer
           </span>{" "}
           with a passion for creating engaging user experience through codes.

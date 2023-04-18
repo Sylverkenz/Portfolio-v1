@@ -22,7 +22,7 @@ function Light({ text }) {
       variants={fromTop}
       initial="hidden"
       whileInView="show"
-      className="container font-CDisplay text-[3rem] lg:text-5xl font-semibold w-fit mx-auto leading leading-none mb-4 lg:mb-0"
+      className="container font-CDisplay text-[3rem] sm:text-[4rem] lg:text-5xl font-semibold w-fit mx-auto leading leading-none mb-4 lg:mb-0"
       ref={conRef}
     >
       <h1>{text}</h1>
