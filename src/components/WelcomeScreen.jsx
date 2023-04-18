@@ -42,11 +42,34 @@ function WelcomeScreen({ welcome }) {
       },
     },
   };
+  const child3 = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        duration: 0.75,
+        ease: "easeOut",
+        staggerChildren: 0.25,
+        when: "beforeChildren",
+      },
+    },
+  };
 
   const listItem = {
     hidden: { y: 0 },
     show: {
       y: "-48rem",
+      transition: {
+        duration: 5,
+        ease: "linear",
+      },
+    },
+  };
+
+  const listItem2 = {
+    hidden: { y: 0 },
+    show: {
+      y: "-36rem",
       transition: {
         duration: 5,
         ease: "linear",
@@ -62,7 +85,7 @@ function WelcomeScreen({ welcome }) {
       exit="exit"
       className="w-full h-screen bg-primaryLight dark:bg-primaryDark grid place-items-center "
     >
-      <motion.article className="flex gap-12 items-center  w-[48rem] ">
+      <motion.article className="hidden lg:flex gap-12 items-center  w-[48rem] ">
         <motion.div variants={child1} className="logobox w-[30%] ">
           <svg
             width="150"
@@ -203,6 +226,17 @@ function WelcomeScreen({ welcome }) {
           <motion.li variants={listItem}>Ciao</motion.li>
           <motion.li variants={listItem}>Namaste</motion.li>
           <motion.li variants={listItem}>Hallo</motion.li>
+        </motion.ul>
+      </motion.article>
+      <motion.article className="flex lg:hidden items-center">
+        <motion.ul variants={child3} className="welcome  w-[100%] ">
+          <motion.li variants={listItem2}>Hello</motion.li>
+          <motion.li variants={listItem2}>Hola</motion.li>
+          <motion.li variants={listItem2}>Bonjour</motion.li>
+          <motion.li variants={listItem2}>Konnichiwa</motion.li>
+          <motion.li variants={listItem2}>Ciao</motion.li>
+          <motion.li variants={listItem2}>Namaste</motion.li>
+          <motion.li variants={listItem2}>Hallo</motion.li>
         </motion.ul>
       </motion.article>
     </motion.main>

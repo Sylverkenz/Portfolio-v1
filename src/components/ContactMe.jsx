@@ -22,7 +22,7 @@ function ContactMe() {
       variants={parent}
       initial="hidden"
       whileInView="show"
-      viewport={{ margin: "-250px" }}
+      viewport={{ margin: "-100px" }}
       className="section"
     >
       <Light text={"contact me"} />
