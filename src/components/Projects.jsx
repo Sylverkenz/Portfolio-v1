@@ -10,7 +10,7 @@ function Projects() {
       initial="hidden"
       whileInView="show"
       className="section"
-      viewport={{ margin: "-250px" }}
+      viewport={{ margin: "-20px" }}
     >
       <Light text={"projects"} />
       <motion.h2
