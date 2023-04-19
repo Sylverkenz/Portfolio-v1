@@ -8,16 +8,16 @@ import { AnimatePresence } from "framer-motion";
 function App() {
   const location = useLocation();
   const [welcome, setWelcome] = useState(true);
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setWelcome(false);
-  //   }, 8500);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setWelcome(false);
+    }, 8500);
 
-  //   return () => {
-  //     clearTimeout(timer);
-  //   };
-  // }, []);
-  // if (welcome) return <WelcomeScreen welcome={welcome} />;
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
+  if (welcome) return <WelcomeScreen welcome={welcome} />;
 
   return (
     <AnimatePresence mode="wait">
