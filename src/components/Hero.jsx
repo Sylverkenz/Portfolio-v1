@@ -10,7 +10,8 @@ function Hero() {
       opacity: 1,
       transition: {
         duration: 0.5,
-        ease: "easeOut",
+        type: 'tween',
+        ease: 'easeOut'
       },
     },
   };
@@ -37,7 +38,7 @@ function Hero() {
   };
 
   return (
-    <motion.section className="grid place-items-center  min-h-[calc(100vh-18rem)] lg:min-h-[calc(100vh-10rem)] font-Satoshi px-[2.2rem]">
+    <motion.section className="grid place-items-center  min-h-screen font-Satoshi px-[2.2rem]">
       <motion.div
         variants={parent}
         initial="hidden"
@@ -66,7 +67,7 @@ function Hero() {
           with a passion for creating engaging user experience through codes.
         </motion.p>
         <motion.button variants={fromTop} className="btn">
-          <Link>view projects</Link>
+          <a href='#projects'>view projects</a>
           <div className="skew"></div>
         </motion.button>
       </motion.div>

@@ -33,7 +33,7 @@ function Card({ id, image, colours, name, description, technologies, link }) {
     >
       <motion.div
         variants={(id + 1) % 2 === 0 ? childrenVar3 : childrenVar4}
-        className="w-[85%] mx-auto lg:mx-0 h-[30rem] lg:h-[36rem] sm:w-[25rem] lg:w-[31rem] rounded-[2.5rem] lg:rounded-[7rem]"
+        className="w-[85%] mx-auto lg:mx-0 h-[27rem] lg:h-[36rem] sm:w-[25rem] lg:w-[31rem] rounded-[2.5rem] lg:rounded-[7rem]"
         style={{
           background: `linear-gradient(to bottom right, ${colours[0]}, ${colours[1]} )`,
         }}
@@ -46,7 +46,7 @@ function Card({ id, image, colours, name, description, technologies, link }) {
             return <span key={technology}>{technology}</span>;
           })}
         </div>
-        <div className="group mx-auto lg:mx-0 text-xsm w-fit font-bold capitalize cursor-pointer">
+        <div className="group mx-auto sm:mx-0 text-xsm w-fit font-bold capitalize cursor-pointer">
           <a
             href={link}
             target="_blank"

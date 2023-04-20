@@ -10,6 +10,7 @@ function Projects() {
       initial="hidden"
       whileInView="show"
       className="section"
+      id="projects"
       viewport={{ margin: "-100px" }}
     >
       <Light text={"projects"} />
@@ -19,7 +20,7 @@ function Projects() {
       >
         my work: where code meets creativity
       </motion.h2>
-      <div className="px-4 sm:px-[3rem] lg:px-[10rem] mt-[4rem] lg:mt-[6rem]">
+      <div className="px-[2.5rem] sm:px-[3rem] lg:px-[10rem] mt-[4rem] lg:mt-[6rem]">
         {projects.map((project) => {
           return <Card key={project.id} {...project} />;
         })}

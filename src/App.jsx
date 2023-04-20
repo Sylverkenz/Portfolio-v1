@@ -17,7 +17,12 @@ function App() {
       clearTimeout(timer);
     };
   }, []);
-  if (welcome) return <WelcomeScreen welcome={welcome} />;
+  if (welcome)
+    return (
+      <AnimatePresence mode="wait">
+        {welcome && <WelcomeScreen />}
+      </AnimatePresence>
+    );
 
   return (
     <AnimatePresence mode="wait">
