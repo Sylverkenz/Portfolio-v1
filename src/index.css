@@ -86,7 +86,7 @@ code {
 }
 
 .section {
-  @apply px-[2.2rem] sm:px-[3.3rem] py-[2rem] lg:px-[10rem] lg:py-[5rem] text-center  font-Satoshi;
+  @apply px-[2.2rem] sm:px-[3.3rem] py-[2rem] lg:px-[10rem] xl:px-[12rem] xlg:px-[15rem] lg:py-[5rem] text-center  font-Satoshi;
 }
 
 .container {
@@ -209,7 +209,7 @@ code {
 }
 
 .card {
-  @apply sm:flex  justify-between px-[1.5rem] py-[4rem] sm:px-[5rem] sm:py-[4rem]  lg:px-[10rem] lg:py-[8rem] border-[3px] border-[#dfdfdf] dark:border-[#131320]  bg-gradient-to-b from-[#e9e9e9] to-[#dbdbdb] dark:from-[#131320]  dark:to-primaryDark mb-[6rem] lg:mb-[10rem] rounded-[4rem] lg:rounded-[8rem];
+  @apply sm:flex  justify-between px-[1.5rem] py-[4rem] sm:px-[2rem] sm:py-[4rem]  lg:px-[10rem] xl:px-[7rem] lg:py-[8rem] border-[3px] border-[#dfdfdf] dark:border-[#131320]  bg-gradient-to-b from-[#e9e9e9] to-[#dbdbdb] dark:from-[#131320]  dark:to-primaryDark mb-[6rem] lg:mb-[10rem] rounded-[4rem] lg:rounded-[8rem];
 }
 
 .cardDetails {
@@ -217,7 +217,7 @@ code {
 }
 
 .cardDetails h3 {
-  @apply font-CDisplay font-semibold text-[2.8rem] lg:text-[4.5rem] bg-clip-text  text-transparent  capitalize my-4;
+  @apply font-CDisplay font-semibold text-[2.8rem] lg:text-[4.5rem] xl:text-[3.8rem] bg-clip-text  text-transparent  capitalize my-4;
 }
 .cardDetails p {
   @apply text-[1.6rem] sm:text-[1.8rem] lg:text-sm mb-4 font-medium text-navTextLight dark:text-navTextDark;
@@ -228,20 +228,21 @@ code {
 }
 
 .stack span {
-  @apply inline-block py-1 px-3 mr-4 bg-[#626161] dark:bg-[#7f7f7f6b] text-navTextDark  rounded-[4px];
+  @apply inline-block py-1 px-3 mr-4 mb-4 bg-[#626161] dark:bg-[#7f7f7f6b] text-navTextDark  rounded-[4px];
 }
 
 .color1 {
-  @apply bg-clip-text text-transparent bg-gradient-to-br from-[#b24592] to-[#f15f79];
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-[#3671e9] to-[#2b076e];
 }
 .color2 {
-  @apply bg-clip-text text-transparent bg-gradient-to-br from-[#C02425] to-[#F0CB35];
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-[#e8f2ee] to-[#5bb5a2];
 }
+
 .color3 {
-  @apply bg-clip-text text-transparent bg-gradient-to-br from-[#c2e59c] to-[#64b3f4];
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-[#609EAF] to-[#1D2123];
 }
 .color4 {
-  @apply bg-clip-text text-transparent bg-gradient-to-br from-[#8E0E00] to-[#1F1C18];
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-[#D0D6F9] to-[#0B0D17];
 }
 
 .outerbox {

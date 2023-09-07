@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
-import {
-  childrenVar1,
-  childrenVar3,
-  childrenVar4,
-} from "../animation";
+import { childrenVar1, childrenVar3, childrenVar4 } from "../animation";
 
 function Card({ id, image, colours, name, description, technologies, link }) {
   const parent = {
@@ -33,11 +29,13 @@ function Card({ id, image, colours, name, description, technologies, link }) {
     >
       <motion.div
         variants={(id + 1) % 2 === 0 ? childrenVar3 : childrenVar4}
-        className="w-[85%] mx-auto lg:mx-0 h-[27rem] lg:h-[36rem] sm:w-[25rem] lg:w-[31rem] rounded-[2.5rem] lg:rounded-[7rem]"
+        className="w-[85%] mx-auto lg:mx-0 h-[27rem] lg:h-[36rem]  xlg:h-[44rem] sm:w-[25rem] lg:w-[31rem] xlg:w-[40rem] rounded-[2.5rem] lg:rounded-[7rem] overflow-hidden"
         style={{
           background: `linear-gradient(to bottom right, ${colours[0]}, ${colours[1]} )`,
         }}
-      ></motion.div>
+      >
+        <img src={image} alt="" className="w-full h-full" />
+      </motion.div>
       <motion.article variants={childrenVar1} className="cardDetails">
         <h3 className={`color${id + 1} `}>{name}</h3>
         <p>{description}</p>

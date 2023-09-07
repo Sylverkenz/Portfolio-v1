@@ -8,7 +8,8 @@ module.exports = {
       sm: "480px",
       md: "767px",
       lg: "976px",
-      xl: "1440px",
+      xl: "1200px",
+      xlg: "1439px",
     },
     fontSize: {
       xsm: "1.6rem",
