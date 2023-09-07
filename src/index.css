@@ -243,6 +243,8 @@ code {
 }
 .color4 {
   @apply bg-clip-text text-transparent bg-gradient-to-br from-[#D0D6F9] to-[#0B0D17];
+}.color5 {
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-[#D0D6F9] to-[#0B0D17];
 }
 
 .outerbox {

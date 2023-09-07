@@ -39,4 +39,14 @@ export const projects = [
     technologies: ["html", "tailwind css", "react JS", "Framer Motion"],
     link: "https://space-tourism-chika.netlify.app/",
   },
+  {
+    id: 4,
+    image: "/artsy.png",
+    colours: ["#D0D6F9", "#0B0D17"],
+    name: "Artsy Photography",
+    description:
+      "A photo gallery website that serves creators and collectors of art and photography , built with love, sweat and react.",
+    technologies: ["html", "tailwind css", "react JS", "Framer Motion"],
+    link: "https://artsy-chika.netlify.app/",
+  },
 ];
