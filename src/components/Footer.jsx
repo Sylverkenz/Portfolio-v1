@@ -7,10 +7,22 @@ function Footer() {
         <span>&copy;</span>CHIKA SYLVESTER 2023. ALL RIGHTS RESERVED
       </p>
       <nav className="text-sm flex gap-12 capitalize">
-        <GitHub />
-        <Twitter />
-        <Mail />
-        <LinkedIn />
+        <a
+          href="https://github.com/Sylverkenz"
+          className="inline-block cursor-pointer"
+          target="_blank"
+        >
+          <GitHub />
+        </a>
+        <a href="https://twitter.com/chikasylvestero" className="inline-block cursor-pointer" target="_blank">
+          <Twitter />
+        </a>
+        <a href="mailto:chika.sylvester1@yahoo.com" className="inline-block cursor-pointer" target="_blank">
+          <Mail />
+        </a>
+        <a href="" className="inline-block cursor-pointer" target="_blank">
+          <LinkedIn />
+        </a>
       </nav>
     </footer>
   );
